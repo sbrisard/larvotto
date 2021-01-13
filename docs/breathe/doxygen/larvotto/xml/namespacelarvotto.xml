@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="namespacelarvotto" kind="namespace" language="C++">
+    <compoundname>larvotto</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="larvotto_8hpp_1a45e597fcd1c4a34b75435d0190eb6399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DllExport std::string</type>
+        <definition>DllExport std::string larvotto::author</definition>
+        <argsstring>()</argsstring>
+        <name>author</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="13" column="25" declfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" declline="13" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="larvotto_8hpp_1a548af365ac9474e45dbaa4c76f3166ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DllExport std::string</type>
+        <definition>DllExport std::string larvotto::version</definition>
+        <argsstring>()</argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="15" column="25" declfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" declline="15" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="function" id="larvotto_8hpp_1a991984fefd2c605b5a02b5cf367733e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DllExport int</type>
+        <definition>DllExport int larvotto::return_one</definition>
+        <argsstring>()</argsstring>
+        <name>return_one</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="17" column="17" declfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" declline="17" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

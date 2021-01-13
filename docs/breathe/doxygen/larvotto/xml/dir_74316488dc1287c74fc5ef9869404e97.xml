@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="dir_74316488dc1287c74fc5ef9869404e97" kind="dir">
+    <compoundname>c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto</compoundname>
+    <innerfile refid="larvotto_8hpp">larvotto.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/"/>
+  </compounddef>
+</doxygen>

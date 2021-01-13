@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.20" xml:lang="en-US">
+  <compound refid="namespacelarvotto" kind="namespace"><name>larvotto</name>
+    <member refid="larvotto_8hpp_1a45e597fcd1c4a34b75435d0190eb6399" kind="function"><name>author</name></member>
+    <member refid="larvotto_8hpp_1a548af365ac9474e45dbaa4c76f3166ca" kind="function"><name>version</name></member>
+    <member refid="larvotto_8hpp_1a991984fefd2c605b5a02b5cf367733e5" kind="function"><name>return_one</name></member>
+  </compound>
+  <compound refid="larvotto_8hpp" kind="file"><name>larvotto.hpp</name>
+    <member refid="larvotto_8hpp_1af83a0ad9d707a0bc5fe281b6e5c358a1" kind="define"><name>DllExport</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>c:/Users/sbrisard/Git/programmes/larvotto/include</name>
+  </compound>
+  <compound refid="dir_74316488dc1287c74fc5ef9869404e97" kind="dir"><name>c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto</name>
+  </compound>
+</doxygenindex>
