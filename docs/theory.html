@@ -13,6 +13,7 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="API documentation of the C++ library" href="cpp_api.html" />
@@ -35,8 +36,75 @@
             
   <div class="section" id="theory">
 <h1>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">¶</a></h1>
-<p>This chapter provides some theoretical background to the
-larvotto project.</p>
+<p>This chapter provides some theoretical background to the larvotto project.</p>
+<div class="section" id="on-the-minimum-image-convention">
+<h2>On the minimum image convention<a class="headerlink" href="#on-the-minimum-image-convention" title="Permalink to this headline">¶</a></h2>
+<p>This is a 1D derivation. We consider the simulation box <span class="math notranslate nohighlight">\((0,L)\)</span>, and two
+particles, located at <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. We seek the radius-vector
+<span class="math notranslate nohighlight">\(r\)</span> in the minimum image convention, defined as follows</p>
+<div class="math notranslate nohighlight" id="equation-20210113091846">
+<span class="eqno">(1)<a class="headerlink" href="#equation-20210113091846" title="Permalink to this equation">¶</a></span>\[r=y-x+nL,
+\quad\text{where}\quad
+d(x, y)=\arg\min\bigl\{\lvert y-x+mL\rvert,m\in\mathbb Z\bigr\}.\]</div>
+<p>In this section, we derive the closed-form expression of this distance. We first
+observe that</p>
+<div class="math notranslate nohighlight">
+\[\lvert y-x\rvert\leq L,
+\quad\text{since}\quad
+0\leq y\leq L
+\quad\text{and}\quad
+-L\leq -x\leq 0.\]</div>
+<p>Without loss of generality, we can assume that <span class="math notranslate nohighlight">\(x\leq y\)</span>, so that</p>
+<div class="math notranslate nohighlight" id="equation-20210114075613">
+<span class="eqno">(2)<a class="headerlink" href="#equation-20210114075613" title="Permalink to this equation">¶</a></span>\[\lvert y-x\rvert=y-x\quad\text{and}\quad0\leq y-x\leq L.\]</div>
+<p>Under the above assumption, <span class="math notranslate nohighlight">\(n\)</span> in Eq. <a class="reference internal" href="#equation-20210113091846">(1)</a> must be 0 or
+-1. Indeed, it results from Eq. <a class="reference internal" href="#equation-20210114075613">(2)</a> that</p>
+<div class="math notranslate nohighlight" id="equation-20210114082505">
+<span class="eqno">(3)<a class="headerlink" href="#equation-20210114082505" title="Permalink to this equation">¶</a></span>\[nL\leq y-x+nL\leq\bigl(n+1\bigr)L.\]</div>
+<p>It results from the above inequality</p>
+<div class="math notranslate nohighlight">
+\begin{align}
+   \text{for }n\geq 1:&amp;&amp; y-x+nL&amp;\geq nL\geq L\\
+
+   \text{for }n\geq-2:&amp;&amp; y-x+nL&amp;\leq\bigl(n+1\bigr)L\leq-L
+\end{align}</div><p>and, in both cases</p>
+<div class="math notranslate nohighlight">
+\[\lvert y-x+nL\rvert\geq L\geq\lvert y-x\rvert\]</div>
+<p>The minimum is necessarily reached for <span class="math notranslate nohighlight">\(n&gt;1\)</span> and <span class="math notranslate nohighlight">\(n &gt;-2\)</span>; in other
+words, the value of <span class="math notranslate nohighlight">\(n\)</span> in Eq. <a class="reference internal" href="#equation-20210113091846">(1)</a> is 0 or -1. In what
+follows, we discuss under which conditions we have <span class="math notranslate nohighlight">\(n=-1\)</span>.</p>
+<p>For <span class="math notranslate nohighlight">\(n\)</span> to be equal to <span class="math notranslate nohighlight">\(-1\)</span>, we must have</p>
+<div class="math notranslate nohighlight" id="equation-20210114082529">
+<span class="eqno">(4)<a class="headerlink" href="#equation-20210114082529" title="Permalink to this equation">¶</a></span>\[\lvert y-x-L\rvert&lt;y-x.\]</div>
+<p>From Eq. <a class="reference internal" href="#equation-20210114082505">(3)</a>, we again observe that</p>
+<div class="math notranslate nohighlight" id="equation-20210114082533">
+<span class="eqno">(5)<a class="headerlink" href="#equation-20210114082533" title="Permalink to this equation">¶</a></span>\[y-x-L\leq 0\quad\text{therefore}\quad\lvert y-x-L\rvert=L+x-y.\]</div>
+<p>Combining Eqs. <a class="reference internal" href="#equation-20210114082529">(4)</a> and <a class="reference internal" href="#equation-20210114082533">(5)</a>, we find the condition</p>
+<div class="math notranslate nohighlight">
+\[L+x-y&lt;y-x,\quad\text{therefore}\quad 2\bigl(y-x\bigr)&gt;L.\]</div>
+<p>To sum up, we have shown that</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{for}\quad x\leq y:\quad
+n=
+\begin{cases}
+   0 &amp; \text{if}\quad2r_0\leq L\\
+   -1 &amp; \text{if}\quad2r_0&gt;L
+\end{cases}
+\quad\text{with}\quad
+r_0=y-x.\end{split}\]</div>
+<p>When <span class="math notranslate nohighlight">\(x&gt;y\)</span>, the above result applies if we swap <span class="math notranslate nohighlight">\(x\)</span> and
+<span class="math notranslate nohighlight">\(y\)</span>. Therefore, minimum image radius-vector <span class="math notranslate nohighlight">\(r\)</span> of any <span class="math notranslate nohighlight">\(0\leq
+x,y\leq L\)</span> is given by the following expression</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}r=
+\begin{cases}
+   r_0-L &amp; \text{if}\quad2r_0&gt;L\\
+   r_0+L &amp; \text{if}\quad2r_0&lt;-L\\
+   r_0 &amp; \text{otherwise}
+\end{cases}
+\quad\text{with}\quad
+r_0=\lvert y-x\rvert.\end{split}\]</div>
+</div>
 </div>
 
 
@@ -60,7 +128,10 @@ larvotto project.</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Theory</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#on-the-minimum-image-convention">On the minimum image convention</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="cpp_api.html">API documentation of the C++ library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="py_api.html">API documentation of the Python bindings</a></li>
 </ul>

@@ -13,6 +13,7 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="API documentation of the Python bindings" href="py_api.html" />
@@ -49,21 +50,95 @@
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Functions</p>
 <dl class="cpp function">
-<dt>
-<span class="target" id="larvotto_8hpp_1a45e597fcd1c4a34b75435d0190eb6399"></span><code class="sig-name descname">DllExport std::string author ()</code></dt>
-<dd></dd></dl>
+<dt id="_CPPv4N8larvotto6authorEv">
+<span id="_CPPv3N8larvotto6authorEv"></span><span id="_CPPv2N8larvotto6authorEv"></span><span id="larvotto::author"></span><span class="target" id="larvotto_8hpp_1a7d5f8eeb4ea018e67991726fb219ce3b"></span>std::string <code class="sig-name descname">author</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8larvotto6authorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the author of the larvotto library. </p>
+</dd></dl>
 
 <dl class="cpp function">
-<dt>
-<span class="target" id="larvotto_8hpp_1a548af365ac9474e45dbaa4c76f3166ca"></span><code class="sig-name descname">DllExport std::string version ()</code></dt>
-<dd></dd></dl>
+<dt id="_CPPv4N8larvotto7versionEv">
+<span id="_CPPv3N8larvotto7versionEv"></span><span id="_CPPv2N8larvotto7versionEv"></span><span id="larvotto::version"></span><span class="target" id="larvotto_8hpp_1ad9fcdd3dd9cf5bf073ca7f1d179b5607"></span>std::string <code class="sig-name descname">version</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8larvotto7versionEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the version of the larvotto library. </p>
+</dd></dl>
 
 <dl class="cpp function">
-<dt>
-<span class="target" id="larvotto_8hpp_1a991984fefd2c605b5a02b5cf367733e5"></span><code class="sig-name descname">DllExport int return_one ()</code></dt>
+<dt id="_CPPv4N8larvotto10return_oneEv">
+<span id="_CPPv3N8larvotto10return_oneEv"></span><span id="_CPPv2N8larvotto10return_oneEv"></span><span id="larvotto::return_one"></span><span class="target" id="larvotto_8hpp_1a60b27f80556bc573302444322fa9abb5"></span>int <code class="sig-name descname">return_one</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8larvotto10return_oneEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return 1. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I0EN8larvotto4reprENSt6stringE8Iterator8Iterator">
+<span id="_CPPv3I0EN8larvotto4reprE8Iterator8Iterator"></span><span id="_CPPv2I0EN8larvotto4reprE8Iterator8Iterator"></span>template&lt;class <code class="sig-name descname">Iterator</code>&gt;<br /><span class="target" id="larvotto_8hpp_1a84c80d5e8d035b71e8493b31ae5281e0"></span>std::string <code class="sig-name descname">repr</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN8larvotto4reprENSt6stringE8Iterator8Iterator" title="larvotto::repr::Iterator">Iterator</a> <em>begin</em>, <a class="reference internal" href="#_CPPv4I0EN8larvotto4reprENSt6stringE8Iterator8Iterator" title="larvotto::repr::Iterator">Iterator</a> <em>end</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN8larvotto4reprENSt6stringE8Iterator8Iterator" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Convert an iterator to a string.</p>
+<p>The string is delimited by square brackets. The elements are separated by a comma. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4I_6size_tEN8larvottolsERNSt7ostreamERNSt7ostreamEK13SimulationBoxI3DIME">
+<span id="_CPPv3I_6size_tEN8larvottolsERNSt7ostreamEK13SimulationBoxI3DIME"></span><span id="_CPPv2I_6size_tEN8larvottolsERNSt7ostreamEK13SimulationBoxI3DIME"></span>template&lt;size_t <code class="sig-name descname">DIM</code>&gt;<br /><span class="target" id="larvotto_8hpp_1acdfc104e92af3f3f4afa013bdfef0213"></span>std::ostream &amp;<code class="sig-name descname">operator&lt;&lt;</code><span class="sig-paren">(</span>std::ostream &amp;<em>os</em>, <em class="property">const</em> <a class="reference internal" href="#_CPPv4I_6size_tEN8larvotto13SimulationBoxE" title="larvotto::SimulationBox">SimulationBox</a>&lt;<a class="reference internal" href="#_CPPv4I_6size_tEN8larvottolsERNSt7ostreamERNSt7ostreamEK13SimulationBoxI3DIME" title="larvotto::operator&lt;&lt;::DIM">DIM</a>&gt; <em>box</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I_6size_tEN8larvottolsERNSt7ostreamERNSt7ostreamEK13SimulationBoxI3DIME" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
+<dl class="cpp class">
+<dt id="_CPPv4I_6size_tEN8larvotto13SimulationBoxE">
+<span id="_CPPv3I_6size_tEN8larvotto13SimulationBoxE"></span><span id="_CPPv2I_6size_tEN8larvotto13SimulationBoxE"></span>template&lt;size_t <code class="sig-name descname">DIM</code>&gt;<br /><span class="target" id="classlarvotto_1_1_simulation_box"></span><em class="property">class </em><code class="sig-name descname">SimulationBox</code><a class="headerlink" href="#_CPPv4I_6size_tEN8larvotto13SimulationBoxE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><em>#include &lt;larvotto.hpp&gt;</em><p>This class defines a simulation box.</p>
+<p><dl class="simple">
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DIM</span></code>: The number of spatial dimensions </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="cpp type">
+<dt id="_CPPv4N8larvotto13SimulationBox6VectorE">
+<span id="_CPPv3N8larvotto13SimulationBox6VectorE"></span><span id="_CPPv2N8larvotto13SimulationBox6VectorE"></span><span id="larvotto::SimulationBox::Vector"></span><span class="target" id="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d"></span><em class="property">typedef </em>std::array&lt;double, <a class="reference internal" href="#_CPPv4I_6size_tEN8larvotto13SimulationBoxE" title="larvotto::SimulationBox::DIM">DIM</a>&gt; <code class="sig-name descname">Vector</code><a class="headerlink" href="#_CPPv4N8larvotto13SimulationBox6VectorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Default type for a spatial vector. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N8larvotto13SimulationBox13SimulationBoxEK6Vector">
+<span id="_CPPv3N8larvotto13SimulationBox13SimulationBoxEK6Vector"></span><span id="_CPPv2N8larvotto13SimulationBox13SimulationBoxEK6Vector"></span><span id="larvotto::SimulationBox::SimulationBox__VectorC"></span><span class="target" id="classlarvotto_1_1_simulation_box_1a67f0fea2548d26d4de400d769331558c"></span><code class="sig-name descname">SimulationBox</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N8larvotto13SimulationBox6VectorE" title="larvotto::SimulationBox::Vector">Vector</a> <em>L</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8larvotto13SimulationBox13SimulationBoxEK6Vector" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Create a new instance with specified dimensions. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8larvotto13SimulationBox4reprEv">
+<span id="_CPPv3NK8larvotto13SimulationBox4reprEv"></span><span id="_CPPv2NK8larvotto13SimulationBox4reprEv"></span><span id="larvotto::SimulationBox::reprC"></span><span class="target" id="classlarvotto_1_1_simulation_box_1a2172693ac05e3ae511f877dcde16372f"></span>std::string <code class="sig-name descname">repr</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8larvotto13SimulationBox4reprEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return a representation of this object as a string. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4NK8larvotto13SimulationBox13minimum_imageEK6VectorK6Vector">
+<span id="_CPPv3NK8larvotto13SimulationBox13minimum_imageEK6VectorK6Vector"></span><span id="_CPPv2NK8larvotto13SimulationBox13minimum_imageEK6VectorK6Vector"></span><span id="larvotto::SimulationBox::minimum_image__VectorC.VectorCC"></span><span class="target" id="classlarvotto_1_1_simulation_box_1a46464590943b4cd3c5a8529b0a850da5"></span><a class="reference internal" href="#_CPPv4N8larvotto13SimulationBox6VectorE" title="larvotto::SimulationBox::Vector">Vector</a> <code class="sig-name descname">minimum_image</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv4N8larvotto13SimulationBox6VectorE" title="larvotto::SimulationBox::Vector">Vector</a> <em>x</em>, <em class="property">const</em> <a class="reference internal" href="#_CPPv4N8larvotto13SimulationBox6VectorE" title="larvotto::SimulationBox::Vector">Vector</a> <em>y</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8larvotto13SimulationBox13minimum_imageEK6VectorK6Vector" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the minimum image <code class="docutils literal notranslate"><span class="pre">r</span></code> of the difference <code class="docutils literal notranslate"><span class="pre">r₀</span> <span class="pre">=</span> <span class="pre">y</span> <span class="pre">-</span> <span class="pre">x</span></code>.</p>
+<p>This vector is defined as follows <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>rᵢ = r₀ᵢ + nᵢ × Lᵢ,
+</pre></div>
+</div>
+ where <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>nᵢ = arg min {|r₀ᵢ + m × Lᵢ|, m = …, -2, -1, 0, 1, 2, …}.
+</pre></div>
+</div>
+ </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="cpp var">
+<dt id="_CPPv4N8larvotto13SimulationBox1LE">
+<span id="_CPPv3N8larvotto13SimulationBox1LE"></span><span id="_CPPv2N8larvotto13SimulationBox1LE"></span><span id="larvotto::SimulationBox::L__std::array:double.DIM:C"></span><span class="target" id="classlarvotto_1_1_simulation_box_1af9ef5c2d2d6bd61bf0d557d32b8c7d41"></span><em class="property">const</em> std::array&lt;double, <a class="reference internal" href="#_CPPv4I_6size_tEN8larvotto13SimulationBoxE" title="larvotto::SimulationBox::DIM">DIM</a>&gt; <code class="sig-name descname">L</code><a class="headerlink" href="#_CPPv4N8larvotto13SimulationBox1LE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Dimensions of the box. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </dd></dl>
 
 </div>

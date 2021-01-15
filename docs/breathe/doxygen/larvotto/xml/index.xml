@@ -1,9 +1,18 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.20" xml:lang="en-US">
+  <compound refid="classlarvotto_1_1_simulation_box" kind="class"><name>larvotto::SimulationBox</name>
+    <member refid="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d" kind="typedef"><name>Vector</name></member>
+    <member refid="classlarvotto_1_1_simulation_box_1af9ef5c2d2d6bd61bf0d557d32b8c7d41" kind="variable"><name>L</name></member>
+    <member refid="classlarvotto_1_1_simulation_box_1a67f0fea2548d26d4de400d769331558c" kind="function"><name>SimulationBox</name></member>
+    <member refid="classlarvotto_1_1_simulation_box_1a2172693ac05e3ae511f877dcde16372f" kind="function"><name>repr</name></member>
+    <member refid="classlarvotto_1_1_simulation_box_1a46464590943b4cd3c5a8529b0a850da5" kind="function"><name>minimum_image</name></member>
+  </compound>
   <compound refid="namespacelarvotto" kind="namespace"><name>larvotto</name>
-    <member refid="larvotto_8hpp_1a45e597fcd1c4a34b75435d0190eb6399" kind="function"><name>author</name></member>
-    <member refid="larvotto_8hpp_1a548af365ac9474e45dbaa4c76f3166ca" kind="function"><name>version</name></member>
-    <member refid="larvotto_8hpp_1a991984fefd2c605b5a02b5cf367733e5" kind="function"><name>return_one</name></member>
+    <member refid="larvotto_8hpp_1a7d5f8eeb4ea018e67991726fb219ce3b" kind="function"><name>author</name></member>
+    <member refid="larvotto_8hpp_1ad9fcdd3dd9cf5bf073ca7f1d179b5607" kind="function"><name>version</name></member>
+    <member refid="larvotto_8hpp_1a60b27f80556bc573302444322fa9abb5" kind="function"><name>return_one</name></member>
+    <member refid="larvotto_8hpp_1a84c80d5e8d035b71e8493b31ae5281e0" kind="function"><name>repr</name></member>
+    <member refid="larvotto_8hpp_1acdfc104e92af3f3f4afa013bdfef0213" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="larvotto_8hpp" kind="file"><name>larvotto.hpp</name>
     <member refid="larvotto_8hpp_1af83a0ad9d707a0bc5fe281b6e5c358a1" kind="define"><name>DllExport</name></member>

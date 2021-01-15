@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.20" xml:lang="en-US">
+  <compounddef id="classlarvotto_1_1_simulation_box" kind="class" language="C++" prot="public">
+    <compoundname>larvotto::SimulationBox</compoundname>
+    <includes refid="larvotto_8hpp" local="no">larvotto.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>DIM</declname>
+        <defname>DIM</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d" prot="public" static="no">
+        <type>std::array&lt; double, DIM &gt;</type>
+        <definition>typedef std::array&lt;double, DIM&gt; larvotto::SimulationBox&lt; DIM &gt;::Vector</definition>
+        <argsstring></argsstring>
+        <name>Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default type for a spatial vector. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="56" column="22" bodyfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlarvotto_1_1_simulation_box_1af9ef5c2d2d6bd61bf0d557d32b8c7d41" prot="public" static="no" mutable="no">
+        <type>const std::array&lt; double, DIM &gt;</type>
+        <definition>const std::array&lt;double, DIM&gt; larvotto::SimulationBox&lt; DIM &gt;::L</definition>
+        <argsstring></argsstring>
+        <name>L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dimensions of the box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="53" column="20" bodyfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlarvotto_1_1_simulation_box_1a67f0fea2548d26d4de400d769331558c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>larvotto::SimulationBox&lt; DIM &gt;::SimulationBox</definition>
+        <argsstring>(const Vector L)</argsstring>
+        <name>SimulationBox</name>
+        <param>
+          <type>const <ref refid="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d" kindref="member">Vector</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new instance with specified dimensions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="59" column="12" bodyfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classlarvotto_1_1_simulation_box_1a2172693ac05e3ae511f877dcde16372f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string larvotto::SimulationBox&lt; DIM &gt;::repr</definition>
+        <argsstring>() const</argsstring>
+        <name>repr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a representation of this object as a string. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="62" column="16" bodyfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classlarvotto_1_1_simulation_box_1a46464590943b4cd3c5a8529b0a850da5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d" kindref="member">Vector</ref></type>
+        <definition>Vector larvotto::SimulationBox&lt; DIM &gt;::minimum_image</definition>
+        <argsstring>(const Vector x, const Vector y) const</argsstring>
+        <name>minimum_image</name>
+        <param>
+          <type>const <ref refid="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d" kindref="member">Vector</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d" kindref="member">Vector</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the minimum image <computeroutput>r</computeroutput> of the difference <computeroutput>r₀ = y - x</computeroutput>.</para>
+<para>This vector is defined as follows <programlisting><codeline><highlight class="normal">rᵢ<sp/>=<sp/>r₀ᵢ<sp/>+<sp/>nᵢ<sp/>×<sp/>Lᵢ,</highlight></codeline>
+</programlisting> where <programlisting><codeline><highlight class="normal">nᵢ<sp/>=<sp/>arg<sp/>min<sp/>{|r₀ᵢ<sp/>+<sp/>m<sp/>×<sp/>Lᵢ|,<sp/>m<sp/>=<sp/>…,<sp/>-2,<sp/>-1,<sp/>0,<sp/>1,<sp/>2,<sp/>…}.</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="81" column="10" bodyfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" bodystart="81" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class defines a simulation box.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DIM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of spatial dimensions </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" line="50" column="1" bodyfile="c:/Users/sbrisard/Git/programmes/larvotto/include/larvotto/larvotto.hpp" bodystart="50" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classlarvotto_1_1_simulation_box_1af9ef5c2d2d6bd61bf0d557d32b8c7d41" prot="public" virt="non-virtual"><scope>larvotto::SimulationBox</scope><name>L</name></member>
+      <member refid="classlarvotto_1_1_simulation_box_1a46464590943b4cd3c5a8529b0a850da5" prot="public" virt="non-virtual"><scope>larvotto::SimulationBox</scope><name>minimum_image</name></member>
+      <member refid="classlarvotto_1_1_simulation_box_1a2172693ac05e3ae511f877dcde16372f" prot="public" virt="non-virtual"><scope>larvotto::SimulationBox</scope><name>repr</name></member>
+      <member refid="classlarvotto_1_1_simulation_box_1a67f0fea2548d26d4de400d769331558c" prot="public" virt="non-virtual"><scope>larvotto::SimulationBox</scope><name>SimulationBox</name></member>
+      <member refid="classlarvotto_1_1_simulation_box_1a37b149461f7622b135b150d20730b51d" prot="public" virt="non-virtual"><scope>larvotto::SimulationBox</scope><name>Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
