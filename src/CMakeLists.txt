@@ -42,3 +42,15 @@ configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/config.cmake.in
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}-config.cmake
   DESTINATION lib/cmake/${PROJECT_NAME})
+
+add_executable(
+        demo
+        demo.cpp
+        larvotto.cpp
+        ../include/${PROJECT_NAME}/larvotto.hpp)
+
+target_include_directories(
+        demo PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
+        $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include>
+        $<INSTALL_INTERFACE:include>)
