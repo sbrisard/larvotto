@@ -16,6 +16,9 @@ project(
 set(CMAKE_CXX_STANDARD 17)
 include(CTest)
 
+add_compile_definitions(PROJECT_VERSION_QUOTED=\"${METADATA_VERSION}\")
+add_compile_definitions(PROJECT_AUTHOR_QUOTED=\"${METADATA_AUTHOR}\")
+
 add_subdirectory(include)
 add_subdirectory(src)
 add_subdirectory(tests)

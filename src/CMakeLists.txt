@@ -1,8 +1,5 @@
 find_library(MATH_LIBRARY m)
 
-add_compile_definitions(PROJECT_VERSION_QUOTED=\"${METADATA_VERSION}\")
-add_compile_definitions(PROJECT_AUTHOR_QUOTED=\"${METADATA_AUTHOR}\")
-
 add_library(
   ${PROJECT_NAME} SHARED
   larvotto.cpp
